@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section>
+        <h1>Registrate</h1>
+        <form action="" id="form" onsubmit="onSubmit(event)">
+            <label for="">
+                <span>Nickname</span>
+                <input type="text" id="nickname">
+                <span class="error"></span>
+            </label>
+            <label for="">
+                <span>Edad</span>
+                <input type="number" id="edad">
+                <span class="error"></span>
+            </label>
+            <label for="">
+                <span>Código del juego</span>
+                <input type="number" id="codigo">
+                <span class="error"></span>
+            </label>
+            <label>
+                <span>Juego seleccionado</span>
+                <input type="text" id="juego" readonly>
+                <span class="error"></span>
+            </label>
+            <button id="submit">Registro</button>
+        </form>
+
+        <button id="preparation" disabled>Preparación</button>
+    </section>
+    <section>
+        <h1>Juegos disponibles</h1>
+        <div class="games">
+            <div class="game" id="minecraft" onclick="onSelectGame(event)">
+                <img src="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Homepage_Discover-our-games_MC-Vanilla-KeyArt_864x864.jpg" width="200" alt="Minecraft">
+            </div>
+            <div class="game" id="fortnite" onclick="onSelectGame(event)">
+                <img src="https://assets-prd.ignimgs.com/2025/04/02/nintendoswitch2-fortnite-keyart-square-1743635675429.jpg?crop=1%3A1%2Csmart&format=jpg&auto=webp&quality=80" width="200" alt="Fortnite">
+            </div>  
+            <div class="game" id="valorant" onclick="onSelectGame(event)">
+                <img src="https://assets-prd.ignimgs.com/2021/12/21/valorant-1640045685890.jpg?crop=1%3A1%2Csmart&format=jpg&auto=webp&quality=80" width="200" alt="Valorant">
+            </div>
+            <div class="game" id="rocketleague" onclick="onSelectGame(event)">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Rocket_League_coverart.jpg" width="200" alt="Rocket League">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
