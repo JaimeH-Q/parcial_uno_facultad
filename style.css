@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7ff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+    margin: 30px auto;
+    padding: 24px;
+    border: 1px solid #e2e8ff;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(69, 27, 255, 0.08);
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+}
+
+form label input {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#botones {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+}
+
+#botones * {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    width: 100px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+#botones *:hover:not(:disabled) {
+    background-color: #917cef;
+    color: #fff;
+    border-color: #917cef;
+}
+
+#botones *:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+#exito {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.pregunta {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 14px;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.pregunta span:first-child {
+    font-weight: bold;
+    color: #555;
+}
